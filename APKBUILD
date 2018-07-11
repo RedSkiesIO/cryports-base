@@ -1,7 +1,7 @@
 # Contributor: James Kirby <james.kirby@atlascityfinace.com>
 # Maintainer: James Kirby <james.kirby@atlascityfinace.com>
 pkgname=alpine-base
-pkgver=3.7.0
+pkgver=4.0.0
 pkgrel=1
 pkgdesc="Meta package for minimal CryptOS base"
 url="http://alpinelinux.org"
@@ -27,7 +27,6 @@ package() {
 	# create /etc/issue
 	cat >"$pkgdir"/etc/issue<<EOF
 Welcome to CryptOS ${pkgver%.*}
-Kernel \\r on an \\m (\\l)
 
 EOF
 
@@ -38,7 +37,5 @@ NAME="CryptOS Linux"
 ID=cryptos
 VERSION_ID=$pkgver
 PRETTY_NAME="CryptOS v$_ver"
-HOME_URL="http://alpinelinux.org"
-BUG_REPORT_URL="http://bugs.alpinelinux.org"
 EOF
 }
