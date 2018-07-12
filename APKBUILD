@@ -8,7 +8,7 @@ url="http://alpinelinux.org"
 arch="noarch"
 license="MIT"
 depends="alpine-baselayout alpine-conf apk-tools busybox busybox-suid busybox-initscripts
-	openrc libc-utils alpine-keys"
+	openrc libc-utils alpine-keys opennode"
 makedepends=""
 install=""
 subpackages=""
