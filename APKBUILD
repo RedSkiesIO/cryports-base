@@ -1,7 +1,7 @@
 # Contributor: James Kirby <james.kirby@atlascityfinace.com>
 # Maintainer: James Kirby <james.kirby@atlascityfinace.com>
 pkgname=alpine-base
-pkgver=4.0.0
+pkgver=3.7.0
 pkgrel=1
 pkgdesc="Meta package for minimal CryptOS base"
 url="http://alpinelinux.org"
