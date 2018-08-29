@@ -1,0 +1,13 @@
+build-master:
+  stage: build
+  script:
+    - make dbuild-cryptos-base-noarch
+  only:
+    - master
+
+build:
+  stage: build
+  script:
+    - make dbuild-cryptos-base-noarch
+  except:
+    - master
