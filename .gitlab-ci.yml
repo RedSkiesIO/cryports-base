@@ -2,8 +2,8 @@ stages:
 - build-master
 - trigger-cryports-build
 
-build:
-  stage: build
+build-master:
+  stage: build-master
   script:
     - make dbuild-cryptos-base-noarch
   only:
