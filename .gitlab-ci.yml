@@ -12,4 +12,4 @@ build-master:
 trigger-cryports-build:
   stage: trigger-cryports-build
   script:
-    - "curl -X POST -F token=TOKEN -F ref=REF_NAME http://gitlab.engr.atlas/api/v4/projects/30/trigger/pipeline"
+    - "curl -X POST -F token=d7c2cf09ba5fd5d6e6a07363719807 -F ref=master http://gitlab.engr.atlas/api/v4/projects/30/trigger/pipeline"
