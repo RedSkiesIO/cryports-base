@@ -9,7 +9,7 @@ dbuild-cryptos-base-noarch:
 		-v `pwd`:/home/builder/cryptos/src \
 		-v ${CRYPORTS_DIR}/_data:/home/builder/.abuild \
 		-v ${CRYPORTS_DIR}/artifacts/repo:/home/builder/packages \
-		dbuild:x8664 \
+		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
 		sh -c "cd cryptos/src && abuild checksum && abuild -R -c"
 
 .PHONY: dbuild-opennode-armhf
@@ -20,7 +20,7 @@ dbuild-cryptos-base-x8664:
 		-v `pwd`:/home/builder/cryptos/src \
 		-v ${CRYPORTS_DIR}/_data:/home/builder/.abuild \
 		-v ${CRYPORTS_DIR}/artifacts/repo:/home/builder/packages \
-		dbuild:x8664 \
+		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
 		sh -c "cd cryptos/src && abuild checksum && abuild -R -c"
 
 .PHONY: dbuild-cryptos-base-armhf
@@ -29,7 +29,7 @@ dbuild-cryptos-base-armhf:
 		-v `pwd`:/home/builder/cryptos/src \
 		-v ${CRYPORTS_DIR}/_data:/home/builder/.abuild \
 		-v ${CRYPORTS_DIR}/artifacts/repo:/home/builder/packages \
-		dbuild:armhf \
+		registry.gitlab.engr.atlas:443/cryptos/docker-build:armhf \
 		sh -c "cd cryptos/src && abuild checksum && abuild -c"
 
 .PHONY: dbuild-cryptos-base-aarch64
@@ -39,5 +39,5 @@ dbuild-cryptos-base-aarch64:
 		-v `pwd`:/home/builder/cryptos/src \
 		-v ${CRYPORTS_DIR}/abuild:/home/builder/.abuild \
 		-v ${CRYPORTS_DIR}/artifacts/repo:/home/builder/packages \
-		dbuild:aarch64 \
+		registry.gitlab.engr.atlas:443/cryptos/docker-build:aarch64 \
 		sh -c "cd cryptos/src && abuild checksum && abuild -c"
