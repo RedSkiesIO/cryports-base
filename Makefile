@@ -6,7 +6,7 @@ dbuild-opennode-x8664:
 dbuild-cryptos-base-noarch:
 	docker run \
 		-e CARCH=noarch \
-		-v ${pwd}:/home/builder/cryptos/src \
+		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}:/home/builder/.abuild \
 		-v ${PACKAGES_DIR}/artifacts/repo:/home/builder/packages \
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
@@ -17,7 +17,7 @@ dbuild-opennode-armhf:
 .PHONY: dbuild-cryptos-base-x8664
 dbuild-cryptos-base-x8664:
 	docker run \
-		-v ${pwd}:/home/builder/cryptos/src \
+		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}/_data:/home/builder/.abuild \
 		-v ${PACKAGES_DIR}/artifacts/repo:/home/builder/packages \
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
@@ -26,7 +26,7 @@ dbuild-cryptos-base-x8664:
 .PHONY: dbuild-cryptos-base-armhf
 dbuild-cryptos-base-armhf:
 	docker run \
-		-v ${pwd}:/home/builder/cryptos/src \
+		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}/_data:/home/builder/.abuild \
 		-v ${PACKAGES_DIR}/artifacts/repo:/home/builder/packages \
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:armhf \
@@ -36,7 +36,7 @@ dbuild-cryptos-base-armhf:
 dbuild-cryptos-base-aarch64:
 	docker run \
 		-e CARCH=aarch64 \
-		-v ${pwd}:/home/builder/cryptos/src \
+		-v ${PWD}:/home/builder/cryptos/src \
 		-v ${KEY_DIR}/abuild:/home/builder/.abuild \
 		-v ${PACKAGES_DIR}/artifacts/repo:/home/builder/packages \
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:aarch64 \
