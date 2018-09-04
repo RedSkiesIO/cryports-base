@@ -1,13 +1,15 @@
-build-master:
+stages:
+- build-master
+- trigger-cryports-build
+
+build:
   stage: build
   script:
     - make dbuild-cryptos-base-noarch
   only:
     - master
 
-build:
-  stage: build
+trigger-cryports-build:
+    stage: trigger-cryports-build
   script:
-    - make dbuild-cryptos-base-noarch
-  except:
-    - master
+    - "curl -X POST -F token=TOKEN -F ref=REF_NAME http://gitlab.engr.atlas/api/v4/projects/30/trigger/pipeline"
