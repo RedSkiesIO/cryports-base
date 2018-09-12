@@ -8,7 +8,7 @@ url="http://atlascity.io"
 arch="all"
 license="MIT"
 depends="alpine-baselayout alpine-conf apk-tools busybox busybox-suid busybox-initscripts
-	openrc libc-utils alpine-keys"
+	openrc libc-utils alpine-keys opennode-base opennode-setup-gui"
 makedepends=""
 depends="crypto++-dev g++ git make autoconf automake libtool"
 install="$pkgname.post-install"
