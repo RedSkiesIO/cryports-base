@@ -6,6 +6,9 @@ build-master:
   stage: build-master
   script:
     - make dbuild-cryptos-base-noarch
+    - make dbuild-cryptos-base-x8664
+    - make dbuild-cryptos-base-armhf
+    - make dbuild-cryptos-base-aarch64
   only:
     - master
 
