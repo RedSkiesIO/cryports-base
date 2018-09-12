@@ -12,8 +12,6 @@ dbuild-cryptos-base-noarch:
 		registry.gitlab.engr.atlas:443/cryptos/docker-build:x8664 \
 		sh -c "cd cryptos/src && abuild checksum && abuild -R -c"
 
-.PHONY: dbuild-opennode-armhf
-dbuild-opennode-armhf:
 .PHONY: dbuild-cryptos-base-x8664
 dbuild-cryptos-base-x8664:
 	docker run \
