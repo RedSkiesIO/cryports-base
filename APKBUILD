@@ -1,7 +1,7 @@
 # Contributor: James Kirby <james.kirby@atlascity.io>
 # Maintainer: James Kirby <james.kirby@atlascity.io>
 pkgname=alpine-base
-pkgver=3.8.0
+pkgver=3.8.1
 pkgrel=420
 pkgdesc="Blockchain managment package"
 url="http://atlascity.io"
