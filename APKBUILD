@@ -3,7 +3,7 @@
 pkgname=alpine-base
 pkgver=3.7.0
 pkgrel=420
-pkgdesc="Blockchain managment package"
+pkgdesc="Blockchain managment package."
 url="http://atlascity.io"
 arch="all"
 license="MIT"
